@@ -136,9 +136,9 @@ class WP_Widget_Options_Migrator {
 							$opts['class'] = array( 'logic' => '' );
 
 						   if( isset( $instances[ 'dw_include' ] ) && '1' == $instances[ 'dw_include' ] ){
-							   $opts['visibility']['option'] = 'show';
+							   $opts['visibility']['options'] = 'show';
 						   }else{
-							   $opts['visibility']['option'] = 'hide';
+							   $opts['visibility']['options'] = 'hide';
 						   }
 						   // print_r( $instances ); echo '<br /><br />';
 						   foreach ( $instances as $key => $value ) {
