@@ -8,7 +8,7 @@ This plugin will help you easily migrate Display Widgets saved instances to Widg
 1. Download this plugin's zip file then install and activate on your WordPress installation.
 2. Go to **Tools > Widget Options Migrator** and read the text labels.
 3. Click **Process Migration**
-4. Download and [Install Widget Options](https://wordpress.org/plugins/widget-options/advanced/) in in case you have not done it yet.
+4. Download and [Install Widget Options](https://wordpress.org/plugins/widget-options/) in case you have not done it yet.
 5. Go to **Appearance > Widgets** and double check if the options was migrated perfectly.
 
 That's it! Enjoy your brand new way on managing your [WordPress Widgets](https://widget-options.com) and I hope you'll love the plugin features! Cheers!
