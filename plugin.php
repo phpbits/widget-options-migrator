@@ -177,7 +177,11 @@ class WP_Widget_Options_Migrator {
 							   }elseif ( strpos( $key, 'type-' ) !== false ){
 								   $opts['visibility']['types'][ str_replace( 'type-', '', $key ) ] = '1';
 							   }elseif ( strpos( $key, 'cat-' ) !== false ){
-								   $opts['visibility']['categories'][ str_replace( 'cat-', '', $key ) ] = '1';
+								   if( $key == 'cat-all' ){
+									   $opts['visibility']['categories'][ 'all_categories' ] = '1';
+								   }else{
+									   $opts['visibility']['categories'][ str_replace( 'cat-', '', $key ) ] = '1';
+								   }
 							   }elseif ( strpos( $key, 'tax-' ) !== false ){
 								   $opts['visibility']['taxonomies'][ str_replace( 'tax-', '', $key ) ] = '1';
 							   }elseif ( $key == 'other_ids' && !empty( $value ) ){
